@@ -27,6 +27,11 @@
   background-color: var(--secondary-background-color);
 
   transition: border-color var(--transition-dur-and-funk);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .contact-form-input-wrapper {
@@ -45,12 +50,6 @@
   .contact-form-input:focus + & {
     fill: var(--accent-color);
   }
-}
-
-.contact-form-input:focus,
-.contact-form-message:focus {
-  outline: none;
-  border-color: var(--accent-color);
 }
 
 .contact-form-label {
@@ -76,6 +75,11 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
   }
 }
 
